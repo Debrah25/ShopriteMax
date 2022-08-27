@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="MAX_INVENTORY_SYSTEM.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MAX_INVENTORY_SYSTEM.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg" Opacity="0.2"/>
+        </Grid.Background>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="15" >
+            <Image Source="/Assets/shoprite.png" Height="100"  />
+            <TextBlock Text="Welcome Back!!" 
+                       HorizontalAlignment="Center" VerticalAlignment="Top"
+                    FontSize="100" FontStyle="Italic"  FontWeight="Medium" FontFamily="Cursive" />
+        <TextBox PlaceholderText="Enter email" Header="Email" Width="300"/>
+            <PasswordBox PlaceholderText=" Enter password" Header=" Password " Width="300"/>
+            <Button x:ConnectionId='2' Content="Login"                              VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Button x:ConnectionId='3' Content="Sign Up"                      VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <StackPanel Orientation="Horizontal" Spacing="20" HorizontalAlignment="Center">
+                
+            <Button x:ConnectionId='4'                       AutomationProperties.Name="Pie" HorizontalAlignment="Center">
+                <Image Source="/Assets/Gmail-logo.png" AutomationProperties.Name="Slice"
+                       Width="50"  />
+            </Button>
+                <Button x:ConnectionId='5'                       AutomationProperties.Name="Pie" HorizontalAlignment="Center">
+                    <Image Source="/Assets/Apple-logo.png" AutomationProperties.Name="Slice" Width="50"/>
+                </Button>
+                 <Button x:ConnectionId='6'                       AutomationProperties.Name="Pie" HorizontalAlignment="Center">
+                    <Image Source="/Assets/pngtree-facebook-logo-facebook-icon-png-image_3566127.png" AutomationProperties.Name="Slice" Width="50"/>
+                </Button>
+               
+            </StackPanel>
+
+
+
+
+        </StackPanel>
+
+    </Grid>
+</Page>
+

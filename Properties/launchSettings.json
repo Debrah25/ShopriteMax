@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "MAX INVENTORY SYSTEM (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "MAX INVENTORY SYSTEM (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

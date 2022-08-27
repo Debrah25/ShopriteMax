@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="MAX_INVENTORY_SYSTEM.Pages.Homepage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MAX_INVENTORY_SYSTEM.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    
+  
+
+    <NavigationView x:Name="nvSample" IsSettingsVisible="False" ItemInvoked="nvSample_ItemInvoked">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Icon="Document" Content="Dashboard" x:Name="Dashboard" />
+            <NavigationViewItem Icon="People" Content="Contact" Tag="Contact" x:Name="Contact"/>
+            <NavigationViewItem Icon="Shop" Content="Order" x:Name="Order" />
+            <NavigationViewItem Icon="Folder" Content="Invoice" x:Name="Invoice" />
+            <NavigationViewItem Icon="OneBar" Content="Report" x:Name="Report" />
+            <NavigationViewItem Icon="Sort" Content="Sales" x:Name="Sales" />
+            
+        </NavigationView.MenuItems>
+        <NavigationView.FooterMenuItems>
+            <NavigationViewItem Icon="Accept" Content="Logout"/>
+        </NavigationView.FooterMenuItems>
+        <Frame x:Name="contentFrame"/>
+    </NavigationView>
+</Page>
